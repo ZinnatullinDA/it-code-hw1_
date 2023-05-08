@@ -5,8 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма регистрации</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+   <form>
+        <div class="register-form-container">
+            <h1 class="form-title">Регистрация:</h1>
+            <p class="title-discription">Заполните форму регистрации ниже:</p>
+            
+            <div class="form-fields">
+                <div class="form-field">
+                    <label class="form-field-discription">Email*</label> 
+                    <input type="text" placeholder="введите Email">
+                </div>
     
+                <div class="form-field">
+                    <label class="form-field-discription">Пароль*</label> 
+                    <input type="text" placeholder="Введите пароль">
+                </div>
+    
+                <div class="form-field">
+                    <label class="form-field-discription">Повторите ввод пароля:</label>
+                    <input type="text" placeholder="Введите пароль">
+                </div>
+    
+                <div class="form-field">
+                    <label class="form-field-discription">Имя*</label> 
+                    <input type="text" placeholder="Введите имя:">
+                </div>
+    
+                <div class="form-field">
+                    <label class="form-field-discription">Фамилия*</label>
+                    <input type="text" placeholder="Введите фамилию:">
+                </div>
+    
+                <div class="form-field">
+                    <label class="form-field-discription">Телефон*</label>
+                    <input type="text" placeholder="Введите номер телефона">
+                </div>
+            </div>
+            
+            <label class="gender">Выберите пол:</label>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1">Мужской</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2">Женский</label>
+              </div>
+            
+            
+        
+            <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
+                <label for="checkbox">
+                  <input type="checkbox" name="checkbox"> Даю согласие на обработку персональных данных</span>
+                </label>
+              </div>
+
+
+            <div class="form-buttons">
+                <button class="button">Регистрация</button>
+                <div class="divider">или</div>
+                <button class="button-cancel">Отмена</button>
+            </div>
+                      
+    
+
+
+        </div>
+   </form>
 </body>
 </html>
